@@ -192,6 +192,10 @@ button.navbar-toggle {
   font-size: 2.8em;
 }
 
+iframe#easyXDM_8404893_3107_provider {
+    margin-top: 16em;
+}
+
 @media (max-height: 720px){
   #single-release {
     margin: 10em 0 0 0;
