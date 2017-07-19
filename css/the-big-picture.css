@@ -4,15 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400|Roboto|Ubuntu');
-
 body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background: none;
-  font-family: -apple-system, BlinkMacSystemFont, 
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
-    "Fira Sans", "Droid Sans", "Helvetica Neue";
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -194,6 +190,10 @@ button.navbar-toggle {
 
 #tour-dates {
     margin-top: 16em;
+}
+
+#tour-dates h1 {
+    text-align: center;
 }
 
 @media (max-height: 720px){
