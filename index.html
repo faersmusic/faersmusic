@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
 <head>
-	<title>Faers Music</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FAERS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-	<h1>FAERS MUSIC</h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse index-navbar navbar-fixed-top" role="navigation">
+        <div class="container-fullwidth">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="logo" href="#">FÆRS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav index-navbar">
+                    <li class="dropdown">
+                        <a class="nav-item dropdown-toggle" data-toggle="dropdown" href="#">Listen</a>
+                            <ul class="dropdown-menu index-dropdown-menu">
+                                <li>
+                                    <a href="https://open.spotify.com/artist/1Bc0sRdkmzGp66QaM8HvX2" target="_blank">Spotify</a>
+                                </li>
+                                <li>
+                                    <a href="https://itun.es/gb/ewPi-" target="_blank">Apple Music</a>
+                                </li>
+                                <li>
+                                    <a href="https://soundcloud.com/faersmusic" target="_blank">Soundcloud</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="tour.html">Tour</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="http://faers.bigcartel.com" target="_blank">Shop</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="http://faersontour.wordpress.com" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" data-toggle="modal" data-target="#contact-modal">Contact </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-12">
+                <h1 id="single-release">'LAST OF OUR KIND' <br>
+                RELEASED<br>
+                28 / 7 / 17
+                </h1>
+                <div class="spotify">
+                <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:1Bc0sRdkmzGp66QaM8HvX2&size=basic&theme=light&show-count=0" width="200" height="28" align="middle" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>contact</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                        <div class="modal-body">
+                            <p>For all enquiries, please e-mail</p>
+                            <a id="email-link" href="mailto:faersmusic@gmail.com">faersmusic@gmail.com</a>
+                        </div>
+                   </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <script type="text/javascript">
+          // Add slideDown animation to Bootstrap dropdown when expanding.
+          $('.dropdown').on('show.bs.dropdown', function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+          });
+
+          // Add slideUp animation to Bootstrap dropdown when collapsing.
+          $('.dropdown').on('hide.bs.dropdown', function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+          });
+    </script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
