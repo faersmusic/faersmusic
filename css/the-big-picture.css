@@ -212,7 +212,7 @@ button.navbar-toggle {
 }
 
 #tour-dates {
-    margin-top: 16em;
+    margin-top: 8em;
 }
 
 #tour-dates h1 {
@@ -221,11 +221,11 @@ button.navbar-toggle {
 
 @media (max-height: 720px){
   #single-release {
-    margin: 10em 0 0 0;
+    margin: 6em 0 0 0;
     font-size: 2.5em;
   }
   #tour-dates {
-    margin-top: 12em;
+    margin-top: 6em;
 }
 
 }
@@ -238,13 +238,13 @@ button.navbar-toggle {
 @media (max-height: 670px){
   #single-release {
     position: relative;
-    margin: 8em 0 0 0;
+    margin: 2em 0 0 0;
     font-size: 2.5em;
   }
 
 
   #tour-dates {
-    margin-top: 8em;
+    margin-top: 4em;
 }
 }
 
@@ -262,7 +262,7 @@ button.navbar-toggle {
 }
 
   ul.nav.navbar-nav {
-    margin: 1em 41px 0 0;
+    margin: 1em 25px 0 0;
 }
 }
 
