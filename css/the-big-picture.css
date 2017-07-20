@@ -295,6 +295,13 @@ button.navbar-toggle {
 }
 }
 
+@media screen and (max-width: 868px) {
+  ul.nav.navbar-nav.index-navbar {
+    background: black;
+    padding-bottom: 1em;
+}
+}
+
 @media screen and (max-width: 800px) {
   .full {
   background: url(../img/bg1.jpg) no-repeat center left fixed; 
