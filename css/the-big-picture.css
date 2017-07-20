@@ -201,13 +201,13 @@ button.navbar-toggle {
 
 .spotify {
   width: 6.1em;
-  margin: 1.5em auto;
+  margin: 1em auto .5em;
 }
 
 #single-release {
   color: #fff;
   text-align: center;
-  margin: 10em 0 0 0;
+  margin: 8em 0 0 0;
   font-size: 2.8em;
 }
 
@@ -219,13 +219,43 @@ button.navbar-toggle {
     text-align: center;
 }
 
+.social {
+  text-align: center;
+}
+
+.socialsvg svg{
+  fill: #fff;
+  display: inline;
+  width: 2em;
+  height: 2em;
+  margin: 0 .1em;
+
+}
+
+.socialsvg svg:hover {
+  fill: #000;
+  background-color: #fff;
+}
+
+.contactsvg svg{
+  fill: #000;
+  display: inline;
+  width: 2em;
+  height: 2em;
+  margin: 1em.1em;
+}
+
+.contactsvg svg:hover{
+  fill: #fff;
+  background-color: #000;
+}
+
+
+
 @media (max-height: 720px){
-  #single-release {
-    margin: 6em 0 0 0;
-    font-size: 2.5em;
-  }
+
   #tour-dates {
-    margin-top: 6em;
+    margin-top: 7em;
 }
 
 }
@@ -235,10 +265,9 @@ button.navbar-toggle {
     color: #fff;
 }
 
-@media (max-height: 670px){
+@media screen and (max-width: 500px) {
   #single-release {
-    position: relative;
-    margin: 2em 0 0 0;
+    margin: 7em 0 0 0;
     font-size: 2.5em;
   }
 
