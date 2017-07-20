@@ -100,7 +100,26 @@ ul.nav.navbar-nav {
 
 button.navbar-toggle {
     margin-top: 1.85em;
+    border: none;
 }
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:hover span.icon-bar {
+  background-color: #000;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle:focus span.icon-bar{
+  background-color: #000;
+}
+
+
 
 .modal-header {
   text-align: center;
@@ -211,9 +230,15 @@ button.navbar-toggle {
 
 }
 
+@media (max-width: 767px) {}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+}
+
 @media (max-height: 670px){
   #single-release {
-    margin: 6em 0 0 0;
+    position: relative;
+    margin: 8em 0 0 0;
     font-size: 2.5em;
   }
 
@@ -230,17 +255,24 @@ button.navbar-toggle {
 }
 
 
-@media (min-width: 868px) {
+@media screen and (min-width: 868px) {
 .navbar-right .dropdown-menu {
     left: auto;
     right: -10%;
 }
-}
 
-
-@media screen and (min-width: 868px) {
   ul.nav.navbar-nav {
     margin: 1em 41px 0 0;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .full {
+  background: url(../img/bg1.jpg) no-repeat center left fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 }
 
