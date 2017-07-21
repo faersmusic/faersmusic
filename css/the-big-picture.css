@@ -264,6 +264,9 @@ button.navbar-toggle {
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
     color: #fff;
 }
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #000;
+}
 
 @media screen and (max-width: 500px) {
   #single-release {
