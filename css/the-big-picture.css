@@ -16,6 +16,12 @@ body {
   color: #000;
 }
 
+h3 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
 a.nav-item{
     cursor: pointer;
 }
@@ -49,7 +55,10 @@ a.nav-item:hover {
     color: #fff;
 }
 
-
+.spotify-play {
+  width: 20em;
+  margin: 1em auto 0;
+}
 .float-right {
 	float: right;
 }
