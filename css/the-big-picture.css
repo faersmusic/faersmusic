@@ -216,7 +216,7 @@ button.navbar-toggle {
 #single-release {
   color: #fff;
   text-align: center;
-  margin: 8em 0 0 0;
+  margin: 7em 0 0 0;
   font-size: 2.8em;
 }
 
@@ -279,7 +279,7 @@ button.navbar-toggle {
 
 @media screen and (max-width: 500px) {
   #single-release {
-    margin: 7em 0 0 0;
+    margin: 6em 0 0 0;
     font-size: 2.5em;
   }
 
