@@ -30,17 +30,14 @@ a.nav-item:hover {
     cursor: pointer;
 }
 
-
 .full {
-  background: url(../img/bg1.jpg) no-repeat center top fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../img/bg2.jpg) no-repeat center fixed; 
+  background-color: #fff;
+  background-size: 35%;
 }
 
 .full-inverse {
-  background-color: #fff;
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,11 +46,17 @@ a.nav-item:hover {
 
 #logo {
     float: left;
-    margin: .4em 0 0 .2em;
+    margin: .1em 0 0 .2em;
     font-size: 3em;
     font-weight: 600;
-    color: #fff;
+    color: #808080;
 }
+
+#logo:hover {
+  color: #000;
+}
+
+
 
 .spotify-play {
   width: 20em;
@@ -76,7 +79,7 @@ a.nav-item:hover {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #fff;
+	color: #808080;
 	margin: 1.38em .5em 0 ;
   text-transform: uppercase;
   font-size: 1.3em;
@@ -86,20 +89,49 @@ a.nav-item:hover {
   padding: 0 .8em;
 }
 
+
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #808080;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background: none;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+    background: none;
+}
+
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #000;
-    background-color: #fff;
 }
 
 ul.nav.navbar-nav {
-    color: #fff;
+    color: #808080;
 }
 
 
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #000;
+    background-color: transparent;
+}
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    color: #fff;
+    color: #808080;
     background-color: transparent;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background: white;
+    margin-bottom: -1.5em;
+}
+
+@media (max-width: 767px) {}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #000;
+    background-color: transparent;
+}
 }
 
 .navbar-collapse {
@@ -108,26 +140,9 @@ ul.nav.navbar-nav {
 }
 
 button.navbar-toggle {
-    margin-top: 1.85em;
+    margin-top: 1em;
     border: none;
 }
-
-.navbar-inverse .navbar-toggle:hover {
-    background-color: #fff;
-}
-
-.navbar-inverse .navbar-toggle:hover span.icon-bar {
-  background-color: #000;
-}
-
-.navbar-inverse .navbar-toggle:focus {
-  background-color: #fff;
-}
-
-.navbar-inverse .navbar-toggle:focus span.icon-bar{
-  background-color: #000;
-}
-
 
 
 .modal-header {
@@ -187,11 +202,12 @@ button.navbar-toggle {
 
 .dropdown-menu>li>a {
   margin: 1em 0;
-  color: #f2f2f2;
+  color: #808080;
+  padding: 2px 6px;
 }
 
 .dropdown-menu a {
-  color: #fff;
+  color: #808080;
 }
 
 .index-dropdown-menu {
@@ -200,7 +216,7 @@ button.navbar-toggle {
 }
 
 .dark-dropdown-menu {
-  background-color: #000;
+  background-color: transparent;
   box-shadow: none;
 }
 
@@ -209,31 +225,36 @@ button.navbar-toggle {
 }
 
 .spotify {
-  width: 6.1em;
-  margin: 1em auto .5em;
-}
-
-#single-release {
-  color: #fff;
-  text-align: center;
-  margin: 7em 0 0 0;
-  font-size: 2.8em;
+  width: 200px;
+  margin-left: -50px;
+  position: fixed;
+  bottom: 11%;
+  left: 50%;
 }
 
 #tour-dates {
-    margin-top: 8em;
+    margin-top: 6em;
 }
 
 #tour-dates h1 {
     text-align: center;
+    color: #808080;
 }
 
 .social {
-  text-align: center;
+  width: 200px;
+  position: fixed;
+  margin-left: -100px;
+  bottom: 3.5%;
+  left: 50%;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 .socialsvg svg{
-  fill: #fff;
+  fill: #808080;
   display: inline;
   width: 2em;
   height: 2em;
@@ -241,13 +262,13 @@ button.navbar-toggle {
 
 }
 
-.socialsvg svg:hover {
+.socialsvg svg:hover{
   fill: #000;
-  background-color: #fff;
 }
 
+
 .contactsvg svg{
-  fill: #000;
+  fill: #808080;
   display: inline;
   width: 2em;
   height: 2em;
@@ -255,11 +276,32 @@ button.navbar-toggle {
 }
 
 .contactsvg svg:hover{
-  fill: #fff;
-  background-color: #000;
+  fill: #000;
 }
 
 
+@media only screen and (max-width: 1200px){
+  .full {
+  background-size: 40%;
+}
+
+@media only screen and (max-width: 1050px){
+  .full {
+  background-size: 45%;
+}
+
+@media only screen and (max-width: 900px){
+  .full {
+  background-size: 50%;
+}
+
+
+@media only screen and (max-width: 867px) {
+    ul.nav.navbar-nav.index-navbar {
+    background: white;
+    padding-bottom: 1em;
+}
+}
 
 @media (max-height: 720px){
 
@@ -269,12 +311,16 @@ button.navbar-toggle {
 
 }
 
-@media (max-width: 767px) {}
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-    color: #fff;
+@media (max-width: 767px) {
+  .full {
+  background-size: 55%;
+
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-    color: #000;
+}
+
+@media only screen and (max-width: 600px){
+  .full {
+  background-size: 60%;
 }
 
 @media screen and (max-width: 500px) {
@@ -282,10 +328,14 @@ button.navbar-toggle {
     margin: 6em 0 0 0;
     font-size: 2.5em;
   }
+    .full {
+  background-size: 75%;
+
+}
 
 
   #tour-dates {
-    margin-top: 4em;
+    margin-top: 6em;
 }
 }
 
@@ -309,25 +359,15 @@ button.navbar-toggle {
 
 @media screen and (max-width: 868px) {
   ul.nav.navbar-nav.index-navbar {
-    background: black;
+    background: white;
     padding-bottom: 1em;
 }
 }
 
-@media screen and (max-width: 800px) {
-  .full {
-  background: url(../img/bg1.jpg) no-repeat center left fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-}
 
 @media screen and (max-width: 600px) {
     #logo {
     font-size: 2.3em;
-    margin: .55em 0 0 .1em;
   }
 }
 
