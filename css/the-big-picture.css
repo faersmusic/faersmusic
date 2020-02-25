@@ -32,8 +32,8 @@ a.nav-item:hover {
 
 .full {
   background: url(../img/bg2.jpg) no-repeat center fixed; 
-  background-color: #fff;
-  background-size: 35%;
+  background-color: #1E473F;
+  background-size: 100%;
 }
 
 .full-inverse {
@@ -49,7 +49,8 @@ a.nav-item:hover {
     margin: .1em 0 0 .2em;
     font-size: 3em;
     font-weight: 600;
-    color: #808080;
+    color: #fff;
+    display: none;
 }
 
 #logo:hover {
@@ -79,7 +80,7 @@ a.nav-item:hover {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #808080;
+	color: #fff;
 	margin: 1.38em .5em 0 ;
   text-transform: uppercase;
   font-size: 1.3em;
@@ -92,7 +93,7 @@ a.nav-item:hover {
 
 
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #808080;
+    background-color: #fff;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -254,7 +255,7 @@ button.navbar-toggle {
 }
 
 .socialsvg svg{
-  fill: #808080;
+  fill: #fff;
   display: inline;
   width: 2em;
   height: 2em;
@@ -263,12 +264,12 @@ button.navbar-toggle {
 }
 
 .socialsvg svg:hover{
-  fill: #000;
+  fill: #808080;
 }
 
 
 .contactsvg svg{
-  fill: #808080;
+  fill: #fff;
   display: inline;
   width: 2em;
   height: 2em;
@@ -276,7 +277,7 @@ button.navbar-toggle {
 }
 
 .contactsvg svg:hover{
-  fill: #000;
+  fill: #808080;
 }
 
 
@@ -287,12 +288,12 @@ button.navbar-toggle {
 
 @media only screen and (max-width: 1050px){
   .full {
-  background-size: 45%;
+  background-size: 75%;
 }
 
 @media only screen and (max-width: 900px){
   .full {
-  background-size: 50%;
+  background-size: 80%;
 }
 
 

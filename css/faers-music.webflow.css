@@ -1,0 +1,203 @@
+.body {
+  background-color: #1e473f;
+}
+
+.navbar {
+  display: none;
+  background-color: transparent;
+}
+
+.nav-menu {
+  display: none;
+  height: 10vh;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container {
+  position: -webkit-sticky;
+  position: sticky;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  text-align: left;
+}
+
+.nav-item {
+  color: #fff;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand {
+  margin-top: 10px;
+}
+
+.image {
+  display: none;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.text-block {
+  color: #fff;
+}
+
+.icon {
+  border: 1px solid transparent;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.section {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  height: 100vh;
+  background-image: url('../images/bg2.jpg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.menu-button {
+  display: block;
+}
+
+.socials {
+  position: fixed;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 17px;
+  text-align: center;
+  -o-object-fit: none;
+  object-fit: none;
+}
+
+.link-block {
+  font-family: 'Font awesome 5 brands 400', sans-serif;
+}
+
+.text-block-2 {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-link {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-family: 'Font awesome 5 brands 400', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #fec3c3;
+}
+
+.text-block-3 {
+  text-decoration: none;
+}
+
+.html-embed {
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.button {
+  display: none;
+  width: 200px;
+  margin-right: auto;
+  margin-bottom: 22px;
+  margin-left: auto;
+  border-radius: 14px;
+  background-color: #e14040;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.button:hover {
+  background-color: #ca784b;
+}
+
+.dropdown-list {
+  background-color: #608f86;
+}
+
+.heading {
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .nav-menu {
+    height: auto;
+    background-color: #608f86;
+    text-align: left;
+  }
+  .nav-item {
+    display: block;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .nav-item:hover {
+    width: 100%;
+    background-color: #1e473f;
+  }
+  .text-block {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .icon {
+    display: none;
+    margin-right: auto;
+  }
+  .menu-button.w--open {
+    background-color: #608f86;
+  }
+  .dropdown-toggle {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .dropdown-list {
+    background-color: #608f86;
+  }
+  .dropdown-list.w--open {
+    background-color: #73b4a8;
+  }
+}
+
+@font-face {
+  font-family: 'Font awesome 5 free 400';
+  src: url('../fonts/Font-Awesome-5-Free-Regular-400.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Font awesome 5 brands 400';
+  src: url('../fonts/Font-Awesome-5-Brands-Regular-400.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
