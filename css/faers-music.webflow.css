@@ -189,6 +189,12 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .section {
+    height: 80vh;
+  }
+}
+
 @font-face {
   font-family: 'Font awesome 5 free 400';
   src: url('../fonts/Font-Awesome-5-Free-Regular-400.otf') format('opentype');
