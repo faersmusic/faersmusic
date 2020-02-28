@@ -122,7 +122,7 @@
 }
 
 .button {
-  display: none;
+  display: block;
   width: 200px;
   margin-right: auto;
   margin-bottom: 22px;
